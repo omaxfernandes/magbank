@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import IconText from "./inconText";
+import IconText from "./InconText";
 import creditCard from "../assets/credit-card.jpg";
 
 import "./CreditCard.scss";
