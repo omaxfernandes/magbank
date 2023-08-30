@@ -7,6 +7,8 @@ import "./App.scss";
 import publicPosts from "./data/posts";
 import CenteredButton from "./components/CenteredButton";
 import Institutional from "./components/Institutional";
+import Faq from "./components/Faq";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
       <CenteredButton>Abra sua conta</CenteredButton>
 
       <Institutional />
+      <Faq />
+
+      <Footer />
     </div>
   );
 }

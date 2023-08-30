@@ -40,9 +40,18 @@ const Institutional = () => (
           <IconText icon={faShieldAlt} color="#FFF" className="mb-2">
             Transações mais seguras
           </IconText>
-          <Button variant="outline-light" className="mt-5">
-            Abra sua conta
-          </Button>
+          <Col className="d-none d-lg-block">
+            <Button variant="outline-light" className="mt-5">
+              Abra sua conta
+            </Button>
+          </Col>
+          <Col className="d-lg-none d-flex justify-content-center">
+            <Row>
+              <Button variant="outline-light" className="mt-5">
+                Abra sua conta
+              </Button>
+            </Row>
+          </Col>
         </Col>
       </Row>
     </Container>
