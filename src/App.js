@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import CreditCardComponet from "./components/CreditCard";
@@ -9,23 +9,30 @@ import CenteredButton from "./components/CenteredButton";
 import Institutional from "./components/Institutional";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
+import AccountModal from "./components/AccountModal";
 
-function App() {
+const App = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div className="App">
-      <Navbar />
-      <Hero />
+      <Navbar handleCreateAcc={() => setShowModal(true)} />
+      <Hero handleCreateAcc={() => setShowModal(true)} />
 
       <CreditCardComponet />
       <CardListComponent publicPosts={publicPosts} />
-      <CenteredButton>Abra sua conta</CenteredButton>
+      <CenteredButton handleCreateAcc={() => setShowModal(true)}>
+        Abra sua conta
+      </CenteredButton>
 
-      <Institutional />
+      <Institutional handleCreateAcc={() => setShowModal(true)} />
       <Faq />
 
       <Footer />
+
+      <AccountModal show={showModal} handleClose={() => setShowModal(false)} />
     </div>
   );
-}
+};
 
 export default App;
