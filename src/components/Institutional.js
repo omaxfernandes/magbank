@@ -11,7 +11,7 @@ import IconText from "./InconText";
 
 import "./Institutional.scss";
 
-const Institutional = () => (
+const Institutional = ({ handleCreateAcc }) => (
   <section className="institutional text-light py-5">
     <Container>
       <Row>
@@ -41,13 +41,21 @@ const Institutional = () => (
             Transações mais seguras
           </IconText>
           <Col className="d-none d-lg-block">
-            <Button variant="outline-light" className="mt-5">
+            <Button
+              variant="outline-light"
+              className="mt-5"
+              onClick={handleCreateAcc}
+            >
               Abra sua conta
             </Button>
           </Col>
           <Col className="d-lg-none d-flex justify-content-center">
             <Row>
-              <Button variant="outline-light" className="mt-5">
+              <Button
+                variant="outline-light"
+                className="mt-5"
+                onClick={handleCreateAcc}
+              >
                 Abra sua conta
               </Button>
             </Row>

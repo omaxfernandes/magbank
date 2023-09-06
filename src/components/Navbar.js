@@ -17,7 +17,7 @@ import logo from "../assets/logo.svg";
 // import Navbar from "react-bootstrap/Navbar";
 // import NavDropdown from "react-bootstrap/NavDropdown";
 
-const Navgation = () => (
+const Navgation = ({ handleCreateAcc }) => (
   <Navbar variant="dark" expand="lg">
     <Container>
       <Navbar.Brand href="#">
@@ -50,7 +50,9 @@ const Navgation = () => (
               </NavDropdown.Item>
             </NavDropdown>
           </Button>
-          <Button variant="outline-light">Abra sua conta</Button>
+          <Button variant="outline-light" onClick={handleCreateAcc}>
+            Abra sua conta
+          </Button>
         </ButtonGroup>
       </Navbar.Collapse>
     </Container>
