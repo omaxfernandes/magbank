@@ -7,6 +7,7 @@ import {
   Button,
   NavDropdown,
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./Navbar.scss";
 import logo from "../assets/logo.svg";
 
@@ -17,16 +18,18 @@ import logo from "../assets/logo.svg";
 // import Navbar from "react-bootstrap/Navbar";
 // import NavDropdown from "react-bootstrap/NavDropdown";
 
-const Navgation = ({ handleCreateAcc }) => (
+const Navgation = ({ handleClick }) => (
   <Navbar variant="dark" expand="lg">
     <Container>
-      <Navbar.Brand href="#">
-        <img
-          src={logo}
-          height="30"
-          className="d-inline-block align-top"
-          alt="Magbank logo"
-        />
+      <Navbar.Brand href="#home">
+        <Link to="/">
+          <img
+            src={logo}
+            height="30"
+            className="d-inline-block align-top"
+            alt="Magbank logo"
+          />
+        </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
@@ -43,14 +46,14 @@ const Navgation = ({ handleCreateAcc }) => (
           <Button variant="outline-light">
             <NavDropdown title="Acessar Minha conta" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">
-                Pessoa Física
+                <Link to="/login">Pessoa Física</Link>
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
-                Pessoa Jurídica
+                <Link>Pessoa Jurídica</Link>
               </NavDropdown.Item>
             </NavDropdown>
           </Button>
-          <Button variant="outline-light" onClick={handleCreateAcc}>
+          <Button variant="outline-light" onClick={handleClick}>
             Abra sua conta
           </Button>
         </ButtonGroup>
