@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Button, Col } from "react-bootstrap";
 
-const CenteredButton = ({ children, handleCreateAcc }) => (
+const CenteredButton = ({ children, handleClick }) => (
   <Container>
     <Col className="d-flex justify-content-center">
       <Row>
@@ -9,7 +9,7 @@ const CenteredButton = ({ children, handleCreateAcc }) => (
           className="my-5 px-5 py3"
           variant="success"
           size="lg"
-          onClick={handleCreateAcc}
+          onClick={handleClick}
         >
           {children}
         </Button>
