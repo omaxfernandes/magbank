@@ -49,7 +49,7 @@ const Navgation = ({ handleClick }) => (
                 <Link to="/login">Pessoa Física</Link>
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
-                <Link>Pessoa Jurídica</Link>
+                <Link to="./login">Pessoa Jurídica</Link>
               </NavDropdown.Item>
             </NavDropdown>
           </Button>
