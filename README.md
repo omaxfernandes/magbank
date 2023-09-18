@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Project: Magbank
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
 
-## Available Scripts
+Magbank is a revolutionary innovation in the banking sector, providing users with an exceptional digital banking experience. This project incorporates cutting-edge technologies to offer a modern and effective banking platform. Below, we highlight the key technologies employed in this project:
 
-In the project directory, you can run:
+- **React:** Magbank is built on the powerful JavaScript framework React, enabling the development of a highly responsive and dynamic user interface. Through React, components interact seamlessly, providing a first-class user experience.
 
-### `yarn start`
+- **React Router:** To facilitate smooth navigation between different pages and features of the application, we utilize React Router. This ensures that users can easily access the information and services they need.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Bootstrap:** Bootstrap is the backbone of Magbank's design. This front-end framework offers a vast library of pre-designed components and elegant styles, making the user interface attractive, functional, and fully responsive.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Sass Preprocessor:** With Sass, the development of CSS styles becomes more efficient and organized. The use of variables, mixins, and nesting simplifies style maintenance and customization, ensuring a consistent look throughout the application.
 
-### `yarn test`
+- **FontAwesome Library:** To add a visual and appealing touch to Magbank, we have integrated the FontAwesome library. With a wide variety of high-quality vector icons, we can enhance the user interface with intuitive and informative icons.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The Magbank project represents the convergence of advanced technologies to create an accessible, elegant, and effective digital banking environment. With React, React Router, Bootstrap, Sass, and FontAwesome, we are equipped to provide an exceptional banking experience, efficiently and attractively meeting our customers' needs. This is the future of the banking industry, right at our users' fingertips.
 
-### `yarn build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Cliente
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To set up and run the Magbank client, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Navegate to the project directory:
+   ```sh
+   $ cd magbank
 
-### `yarn eject`
+2. Install dependencies using Yarn (make sure you have Yarn installed):
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    $ yarn install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Start the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    $ yarn start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This will start the Magbank client locally, ande you ca acesses it in your browser at http://localhost:3000.

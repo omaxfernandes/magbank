@@ -12,13 +12,13 @@ import Faq from "../components/Faq";
 const Home = ({ handleClick }) => {
   return (
     <div>
-      <Hero />
+      <Hero onClick={handleClick} />
 
       <CreditCardComponet />
       <CardListComponent publicPosts={publicPosts} />
       <CenteredButton onClick={handleClick}>Abra sua conta</CenteredButton>
 
-      <Institutional />
+      <Institutional onClick={handleClick} />
       <Faq />
     </div>
   );

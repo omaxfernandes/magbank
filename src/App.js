@@ -18,12 +18,12 @@ const App = () => {
     <div className="App">
       <Navbar handleClick={() => setShowModal(true)} />
       <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route
           path="/"
           element={<Home handleClick={() => setShowModal(true)} />}
         ></Route>
-        <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
 
       <Footer />
