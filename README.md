@@ -27,11 +27,11 @@ To set up and run the Magbank client, follow these steps:
    $ cd magbank
 
 2. Install dependencies using Yarn (make sure you have Yarn installed):
-
+    ```sh
     $ yarn install
 
 3. Start the development server:
-
+    ```sh
     $ yarn start
 
 This will start the Magbank client locally, ande you ca acesses it in your browser at http://localhost:3000.
